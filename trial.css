@@ -1,0 +1,163 @@
+ul{
+  font-family:fantasy;
+  font-size: 25px;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  float: right;
+}
+
+li{
+float:right;
+}
+li a{
+  float: left;
+  display: block;
+  padding: 0px 8px;
+  color:#000000;
+  text-decoration: none;
+}
+body{
+  background-color: #000000;
+}
+#div1{background-color: #FFFFFF;
+  height: 70px;
+}
+body{
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+}
+#login{
+      font-size: 15pt;
+      text-align: center;
+      font-family:fantasy;
+      background-color:white;
+      color: #000000;  
+      border: 3px dotted gold; 
+      border-radius: 20px;
+      padding: 3px;       
+}
+#signup{
+  font-size: 15pt;
+  text-align: center;
+  font-family:fantasy;
+  background-color:#5F9EA0;
+  color: #000000;  
+  border: 3px dotted gold; 
+  border-radius: 20px;
+  padding: 3px;       
+}
+.sid{
+background-color: white;
+height: 100px;
+width: 50px;
+position: absolute; top: 400; right: 30;
+height: 200px;
+width: 200px;
+}
+.div2{background-color: #36454F;
+width: 1530px;
+height: 80px;
+margin-bottom: 0px;
+position: absolute;
+margin-top: 545px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+    body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-img {
+    /* The image used */
+    background-image: url("img_nature.jpg");
+  
+    /* Control the height of the image */
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Add styles to the form container */
+  .container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }

@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+            ULTIMATE Gym login
+        </title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body>
+        <div id="div1">
+            <img src="Gym.png" alt="gym_logo" width="80" height="70" id="logo">
+            <ul>
+                <li>
+                <a href="contact.html" target="_blank">
+                Contact
+                </a>
+                </li>
+                <li><a href="about.html" target="_blank">
+                About Us
+                 </a>
+                 </li>
+                <li>
+                    <a href="Gallery.html" target="_blank">
+                Gallery
+                 </a>
+                 </li>
+                <li><a href="index.html" target="_blank">
+                 Home
+                 </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1 style="margin-left: 600px; margin-top: 0px ; font-style: unset; background-color: white; width: 310px; border-radius: 10px; border: double palevioletred;">
+            The ULTIMATE Gym
+            </h1>
+        </div>
+        <div style="position: absolute; top: 125; left:5;">
+            <iframe style="border-radius: 25px 0px 25px 0px;" src="https://www.youtube.com/embed/BHY0FxzoKZE" height="200" width="500">
+            </iframe>
+            </div>
+            <div>
+                <form id="loginform">
+                    <center><b><h2>Please enter you <br>login credentials</h2></b></center>
+                    <center><b>Email or Phone No.</b></center>
+                    <center><input type="text" id="t1"/></center>
+                   <center><b>Password</b></center>
+                    <center><input type="password" id="t2" /></center><br>
+                    <center><input type="button" onclick="fun()" taget="_blank" value="login" class="button2"/></center><br>
+                    <center><b>or, <input type="button" onclick="window.location.href='signup.html'" taget="_blank" value="signup" class="button2" /> if you are new</b></center>
+                </form>
+            </div>
+            <div class="sid">
+                <img src="Gym.png" style="position: absolute; right: 0px; height: 300px;">
+               <h2 style="margin-top: 300px; margin-left: 10px; font-size: 30px; color: #36454F; text-decoration: underline overline black;">The Champions' Den</h2>
+            </div>
+            <div class="div2">
+                <h2 class="text1">THE FIRST STEP TO SUCCESS IS WHEN OTHERS GIVE UP AND YOU KEEP ON GOING.</h2>
+            </div>
+            <div class="div3">
+                <h2 class="text1"><input type="button" onclick="window.location.href='signup.html'" taget="_blank" value="Join" class="button" /> today and avail exclusive website-only offers on The ULTIMATE Gym membership.
+                    <br>Kick start you fitness journey today. Become a NEW YOU.</h2>
+            </div>
+            <div style="position:absolute; bottom:0; right:0; transition:all;">
+                <a href="https://twitter.com/Gymshark" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/gymshark/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/company/gymshark" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://www.facebook.com/TheUltimateGym1/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/watch?v=UFOLfB0jfkk&ab" target="_blank" class="fa fa-youtube"></a>
+            </div>
+            <script>
+                 function fun(){ 
+                var a=document.getElementById("t1").value;
+                var b=document.getElementById("t2").value;
+if(a==""){
+alert("Please check if you have entered the E-mail");
+document.getElementById("t1").style.background="#DC143C";
+}
+else if(b==""){
+alert("Please check if you have entered the password");
+document.getElementById("t2").style.background="#DC143C";
+}
+               else alert("Welcome back.")
+            }
+            </script>
+    </body>
+</html>

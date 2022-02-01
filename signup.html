@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title>
+            ULTIMATE Gym Subscription
+        </title>
+        <style>
+            form{
+                margin-top: 0px;
+                background-color: rgb(147, 167, 95);
+                margin-left: 600px;
+                border-radius: 15px;
+                width:300px;
+                border: 5px double gold;
+            }
+        </style>
+    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <body>
+        <div id="div1">
+            <img src="Gym.png" alt="gym_logo" width="80" height="70" id="logo">
+            <ul>
+                <li>
+                <a href="contact.html" target="_blank">
+                Contact
+                </a>
+                </li>
+                <li><a href="about.html" target="_blank">
+                About Us
+                 </a>
+                 </li>
+                <li>
+                    <a href="Gallery.html" target="_blank">
+                Gallery
+                 </a>
+                 </li>
+                <li><a href="index.html" target="_blank">
+                 Home
+                 </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1 style="margin-left: 600px; margin-top: 0px ; font-style: unset; background-color: white; width: 310px; border-radius: 10px; border: double palevioletred;">
+            The ULTIMATE Gym
+            </h1>
+        </div>
+        <div style="position: absolute; top: 125; left:5;">
+            <iframe style="border-radius: 25px 0px 25px 0px;" src="https://www.youtube.com/embed/BHY0FxzoKZE" height="200" width="500">
+            </iframe>
+            </div>
+            <div class="div2">
+                <h2 class="text1">THE FIRST STEP TO SUCCESS IS WHEN OTHERS GIVE UP AND YOU KEEP ON GOING.</h2>
+            </div>
+            <div style="position:absolute; bottom:0; right:0; transition:all;">
+                <a href="https://twitter.com/Gymshark" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/gymshark/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/company/gymshark" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://www.facebook.com/TheUltimateGym1/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/watch?v=UFOLfB0jfkk&ab" target="_blank" class="fa fa-youtube"></a>
+            </div>
+        <div>
+            <form>
+                <center><b>First Name</b></center>
+                <center><input type="text" ID="t1"/></center>
+                <center><b>Last Name </b></center>
+                <center><input type="text" ID="t2"/></center>
+                <center><b>Gender</b></center>
+                 <center><input type="radio" ID="g1" name="g"> Male </input></center>
+                 <center><input type="radio" ID="g2" name="g"> Female </input></center>
+                 <center><b>Address</b></center>
+                 <center><textarea rows="1" cols="20" ID="t3"></textarea></center>
+                <center><b>DOB</b></center>
+                 <center><input type="date" ID="t4"/></center>
+                 <center><b>Height(in inches)</b></center>
+                 <center><input type="number" ID="t5"/></center>    
+                 <center><b>Weight(in kg)</b></center>
+                 <center><input type="number" ID="t6"/></center>
+                <center><b>Phone Number</b></center>
+                 <center><input type="number" ID="t7"/></center>
+                <center><b>Email</b></center>
+                 <center><input type="text" ID="t8" placeholder="someone@gmail.com"/></center>
+                <center><b>New Password</b></center>
+                 <center><input type="password" ID="t9"/></center>
+                <center><b>Confirm New Password</b></center>
+                 <center><input type="password" ID="t10"/></center>
+                <center><input type="checkbox" id="cb"/>All the details are correct</center>
+                <center><input type="button" value="submit" onclick="fun()"/></center>
+                <center>or <input type="button" onclick="window.location.href='login.html'" taget="_blank" value="login" /> to an existing account</center>
+            </form>
+        </div>
+        <div style="position: absolute; top: 150; right: 10; background-color: gold; border-radius: 20px; border: 4px outset red;">
+           <center> <b>Height Converter(from centimeter)</b><br>
+            <input type="number" id="a"/><br><input type="button" value="convert" onclick="ci()"/><br>
+            Result(in inches)<input type="text" id="b"/></center><br><br>
+            <center> <b>Weight Converter(from pounds)</b><br>
+                <input type="number" id="c"/><br><input type="button" value="convert" onclick="pk()"/><br>
+                Result(in kg)<input type="text" id="d"/></center>
+        </div>
+        <div class="sid">
+            <img src="Gym.png" style="position: absolute; right: 0px;">
+            <h2 style="margin-top: 190px; margin-left: 10px; font-size: 20px; color: #36454F; text-decoration: underline overline black;">The Champions' Den</h2>
+        </div>
+        <script>
+            function fun(){ 
+                var a=document.getElementById("t1").value;
+                var b=document.getElementById("t2").value;
+                var c=document.getElementById("t3").value;
+                var d=document.getElementById("t4").value;
+                var e=document.getElementById("t5").value;
+                var f=document.getElementById("t6").value;
+                var g=document.getElementById("t7").value;
+                var h=document.getElementById("t8").value;
+                var i=document.getElementById("t9").value;
+                var j=document.getElementById("t10").value;
+
+if(a==""){
+alert("first name can't be empty");
+document.getElementById("t1").style.background="#DC143C";
+}
+else if(b==""){
+alert("last name can't be empty");
+document.getElementById("t2").style.background="#DC143C";
+}
+else if(c==""){
+alert("address can't be empty");
+document.getElementById("t3").style.background="#DC143C";
+}
+else if(d==""){
+alert("DOB can't be empty");
+document.getElementById("t4").style.background="#DC143C";
+}  
+else if(e==""){
+alert("height can't be empty");
+document.getElementById("t5").style.background="#DC143C";
+} 
+else if(f==""){
+alert("weight can't be empty");
+document.getElementById("t6").style.background="#DC143C";
+}      
+else if(g==""){
+alert("phone can't be empty");
+document.getElementById("t7").style.background="#DC143C";
+} 
+else if(h==""){
+alert("email can't be empty");
+document.getElementById("t8").style.background="#DC143C";
+} 
+else if(i==""){
+alert("password can't be empty");
+document.getElementById("t9").style.background="#DC143C";
+} 
+else if(j==""){
+alert("please confirm the password");
+document.getElementById("t10").style.background="#DC143C";
+} 
+               else alert("Account Created Successfully, Welcome to our family.")
+            }
+            function ci(){
+                document.getElementById("b").value=Number (document.getElementById("a").value)/2.54    
+            }
+            function pk(){
+                document.getElementById("d").value=Number (document.getElementById("c").value)/2.205    
+            }
+        </script>
+    </body>
+</html>
+    
